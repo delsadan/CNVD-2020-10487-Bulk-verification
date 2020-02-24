@@ -99,11 +99,11 @@ def cmd(ip1, num1=0):
 
     if 'Getting resource' in s:
         logger.warning('{} 存在漏洞 CNVD-2020-10487！'.format(ip1))
-        out1 = '{}-{}-存在漏洞！\n'.format(num1, ip1)
+        out1 = '{}-{}-存在漏洞\n'.format(num1, ip1)
         vuln = True
     else:
-        logger.success('{} 不存在漏洞！\n'.format(ip1))
-        out1 = '{}-{}-不存在漏洞'.format(num1, ip1)
+        logger.success('{} 不存在漏洞\n'.format(ip1))
+        out1 = '{}-{}-不存在漏洞\n'.format(num1, ip1)
         vuln = False
 
     time.sleep(3)  # 延时2s，否则截图异常
